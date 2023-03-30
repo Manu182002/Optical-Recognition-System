@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable</title>
+    <link rel="stylesheet" href="searchable.css">
+</head>
+<style>
+    body {
+      background-image: url('./searchable.jpg');
+      background-repeat: no-repeat;
+      display: block;
+      background-attachment: fixed;
+      background-image: cover;
+      background-position: center;
+      
+      
+    }
+    </style>
+<body>
+    <h4>Search the Word</h4>
+    <div class="container">
+        <form action="/search" method="POST" enctype="multipart/form-data">
+            <input type="text" name="query">
+            <input type="file" name="filename">
+            <input type="submit">
+        </form>
+        <p></p>
+    </div>
+</body>
+</html>

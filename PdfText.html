@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="pdfword.css">
+</head>
+<style>
+    body {
+      background-image: url('./PDFTEXT.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-image: cover;
+      background-size: 500px 500px;
+      background-position: center;
+      
+      
+    }
+    </style>
+<div class="container">
+    <form action="/pdftxt" method="POST" enctype="multipart/form-data">
+        <input type="file" name="filename">
+        <input type="text" name="txt" value="1" hidden>
+        <input type="submit">
+    </form>
+    <p>{{  File Obtained! }}</p>
+</div>
